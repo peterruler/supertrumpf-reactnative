@@ -28,4 +28,9 @@ https://reactnavigation.org/docs/navigating
 
 # dependencies
 
- see package.json
+see package.json
+ 
+ 
+# demo snack on expo
+
+https://snack.expo.dev/@petethegreat/super-trumnpf
