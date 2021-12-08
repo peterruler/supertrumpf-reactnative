@@ -11,7 +11,7 @@ export default function App() {
     <NavigationContainer>
       <Stack.Navigator>
         <Stack.Screen name="Super Trumpf - Liste" component={List} />
-        <Stack.Screen name="Super Trump - Formular" component={Form} />
+        <Stack.Screen name="Super Trumpf - Formular" component={Form} />
       </Stack.Navigator>
     </NavigationContainer>
   );

@@ -35,7 +35,7 @@ export default function List({ navigation }) {
       renderItem={({ item }) => (
         <View style={styles.listItem}>
           <Text style={styles.headline}
-            onPress={() => navigation.navigate('Super Trump - Formular', { id: item.id })}>{item.name} ></Text>
+            onPress={() => navigation.navigate('Super Trumpf - Formular', { id: item.id })}>{item.name} ></Text>
         </View>
       )}
     ></FlatList>
