@@ -18,7 +18,6 @@ export default function List({ navigation }) {
     fetchData();
   }, []);
   return (<View>
-    <Text style={styles.headline}>Super Trumpf</Text>
     <TextInput
       autoCapitalize="none"
       value={filter}
@@ -36,7 +35,7 @@ export default function List({ navigation }) {
       renderItem={({ item }) => (
         <View style={styles.listItem}>
           <Text style={styles.headline}
-            onPress={() => navigation.navigate('Formular', { id: item.id })}>{item.name} ></Text>
+            onPress={() => navigation.navigate('Super Trump - Formular', { id: item.id })}>{item.name} ></Text>
         </View>
       )}
     ></FlatList>

@@ -21,6 +21,10 @@ export default function Form ({ route, navigation }) {
   /* 2. Get the param */
   const { id } = route.params;
 
+  const goBack = () => {
+    navigation.navigate('Super Trumpf - Liste');
+  }
+
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
@@ -40,7 +44,7 @@ export default function Form ({ route, navigation }) {
       },
       body: JSON.stringify(animal),
     });
-    //goBack();
+    goBack();
   }
 
   const createChangeHandler = name => text =>
@@ -51,7 +55,6 @@ export default function Form ({ route, navigation }) {
 
   return (
     <ScrollView>
-      <Text style={styles.headline}>{animal.name} bearbeiten</Text>
       <Input
         label="Name"
         placeholder="Name"
@@ -97,9 +100,8 @@ export default function Form ({ route, navigation }) {
       
       <Button
         onPress={save}
-        title="Speichern"
+        title="Speichern und Zurück"
       ></Button>
-      <Text style={styles.link} onPress={() => navigation.navigate('List')}>Zurück zur Liste</Text>
     </ScrollView>
   );
 };

@@ -10,8 +10,8 @@ export default function App() {
   return (
     <NavigationContainer>
       <Stack.Navigator>
-        <Stack.Screen name="List" component={List} />
-        <Stack.Screen name="Formular" component={Form} />
+        <Stack.Screen name="Super Trumpf - Liste" component={List} />
+        <Stack.Screen name="Super Trump - Formular" component={Form} />
       </Stack.Navigator>
     </NavigationContainer>
   );

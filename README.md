@@ -33,4 +33,4 @@ see package.json
  
 # demo snack on expo
 
-https://snack.expo.dev/@petethegreat/super-trumnpf
+https://snack.expo.dev/@petethegreat/super-trumpf
