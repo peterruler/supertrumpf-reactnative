@@ -28,7 +28,7 @@ export default function Form ({ route, navigation }) {
   useEffect(() => {
     async function fetchData() {
       const response = await fetch(
-        `https://ps007server.herokuapp.com/api/animals/${id}`
+        `https://ps-hello-server.onrender.com/api/animals/${id}`
       );
       const data = await response.json();
       setAnimal(data);
@@ -37,7 +37,7 @@ export default function Form ({ route, navigation }) {
   }, [id]);
 
   async function save() {
-    await fetch(`https://ps007server.herokuapp.com/api/animals/${animal.id}`, {
+    await fetch(`https://ps-hello-server.onrender.com/api/animals/${animal.id}`, {
       method: 'PUT',
       headers: {
         'Content-type': 'application/json',

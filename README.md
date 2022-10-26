@@ -19,6 +19,9 @@ with android sdk and emulator, run (need android version e.g. 11, Emulator for e
 
 
  `expo start --web`
+- install expo for current user & project: `yarn add expo-cli`
+- update expo: `/Users/$(whoami)/Documents/Projects/supertrumpf-reactnative/node_modules/expo-cli/bin/expo.js update 44.0.0`
+- on MacOS if not in path use: `/Users/$(whoami)/Documents/Projects/supertrumpf-reactnative/node_modules/expo-cli/bin/expo.js start --web`
 
 # routing
 

@@ -11,7 +11,7 @@ export default function List({ navigation }) {
   const [animals, setAnimals] = useState<Animal[]>([]);
   useEffect(() => {
     async function fetchData() {
-      const response = await fetch('https://ps007server.herokuapp.com/api/animals');
+      const response = await fetch('https://ps-hello-server.onrender.com/api/animals');
       const data = await response.json();
       setAnimals(data);
     }
